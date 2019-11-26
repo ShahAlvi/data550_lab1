@@ -1,0 +1,61 @@
+---
+title: "Lab1"
+author: "Shahrukh Alvi"
+date: "14/11/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages('tinytex', repos = "http://cran.us.r-project.org")
+options(tinytex.verbose = TRUE)
+```
+
+# Q1
+
+```{r}
+#install.packages("shiny")
+library("shiny")
+```
+
+# Q2
+
+```{r}
+runApp("barChart/")
+```
+
+# Q3
+
+1) no titles for axes or graph
+2) no x-axis labels
+3) sort ascending to properly differential between closely related values
+
+# Q5
+
+```{r}
+runApp("barChart/")
+```
+
+# Q6
+
+las determines whether x and y labels are parellel or perpendicular to the axis
+
+```{r}
+runApp("scatterPlot/")
+```
+
+# Q7
+
+```{r}
+runApp("boxPlot/")
+```
+ 
+ The boxplot reveals there is one very large outlier in the data
+
+# Q8
+
+For this histogram there is just one large outlier at 990.3 at index 36. It was removed to make the histogram
+
+```{r}
+runApp("hist/")
+```
